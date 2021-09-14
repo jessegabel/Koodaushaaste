@@ -1,11 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Title of the document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables!</title>
+    <script type="text/javascript">
+      function yhteenlasku(){
+        var a = parseInt(document.getElementById("Numero1").value);
+        var b = parseInt(document.getElementById("Numero2").value);
+        var add = a + b;
+        console.log(add);
+      }
+    </script>
 </head>
 
 <body>
-The content of the document......
+  <form>
+    Anna ensimmäinen numero: <br>
+    <input type="text" name="Numero1" id="Numero1"> <br>
+    Anna toinen numero: <br>
+    <input type="text" name="Numero2" id="Numero2"> <br>
+    <input type="button" onclick="yhteenlasku()" value="Laske" >
+  </form>
 </body>
 
 </html>
