@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <title>Koodaushaaste 3</title>
     <script type="text/javascript">
-      function alleSata(x){
-        if (x <= 100);
+      function alleSata(a, b) {
+        if((a + b) < 100)
         console.log("Lukujen summa on alle 100");
-        else () {                                                                 // "else" command not working properly, find out why.
-          console.log("Luvut ovat liian suuria, jotta pystyisin laskemaan niitä!"); // code excecutes when the "else" command is switched to an "if" command, but still doesnt function as intended
+        else {
+          console.log("Luvut ovat liian suuria, jotta pystyisin laskemaan niitä!");
         }
       }
 
@@ -17,9 +17,7 @@
   <body>
     <script type="text/javascript">
 
-                                                                                  //find a way to show the code that you want the function to apply the problem before the answer.
-                                                                                  // possible solution: a + b = c make var for a, b and c maybe?
-    alleSata();
+<p><button onclick="alleSata(2, 31)">alleSata </button></p>
   </script>
   </body>
 </html>
