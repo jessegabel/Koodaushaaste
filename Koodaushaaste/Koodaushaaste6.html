@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript">
+function Syntymapaiva(a, b, c) {
+  function Vuodet(c){
+    return c * 365.25;
+  }
+  function kuukaudet(b) {
+switch(b-1){
+  case 0:
+  return 0;
+  break;
+  case 1:
+  return 31
+  break;
+  case 2:
+  return 59
+  break;
+  case 3:
+  return 90
+  break;
+  case 4:
+  return 120
+  break;
+  case 5:
+  return 151
+  break;
+  case 6:
+  return 181
+  break;
+  case 7:
+  return 212
+  break;
+  case 8:
+  return 243
+  break;
+  case 9:
+  return 273
+  break;
+  case 10:
+  return 304
+  break;
+  case 11:
+  return 334
+  break;
+  case 12:
+  return 365
+  break;
+  default:
+  return 0;
+}
+
+  }
+  Syntymavuosi = Vuodet(2003) + kuukaudet(4) + 22;
+  Nyt = Vuodet(2021) + kuukaudet(10) + 12;
+  console.log(Nyt-Syntymavuosi);
+}
+    </script>
+    <title>Koodaushaaste 6</title>
+  </head>
+  <body>
+<p><button onclick="Syntymapaiva(22,4,2003)">Syntymapaiva</button></p>
+
+  </body>
+
+</html>
